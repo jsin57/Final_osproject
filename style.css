@@ -1,0 +1,142 @@
+/* -------------------------------------------
+   전체 배경 (검은 바탕 + 하늘색 은은한 조명)
+-------------------------------------------- */
+body {
+    margin: 0;
+    font-family: 'Pretendard', sans-serif;
+
+    /* 검정 바탕 위에 하늘색 조명이 퍼지는 느낌 */
+    background: radial-gradient(
+        circle at center,
+        rgba(120, 180, 255, 0.25),  /* TODO: 조명 중심 색(하늘색) */
+        rgba(0, 0, 0, 0.95) 40%,    /* 바깥쪽으로 갈수록 검정 */
+        rgba(0, 0, 0, 1) 80%
+    );
+    color: #ddecff; /* 기본 글자 색 (밝은 하늘색 톤) */
+}
+
+/* -------------------------------------------
+   헤더 영역
+-------------------------------------------- */
+.main-header {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.main-header h1 {
+    font-size: 2.6rem;
+    margin-bottom: 10px;
+    color: #e7f3ff;
+}
+
+.subtitle {
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+/* -------------------------------------------
+   메인 컨테이너
+-------------------------------------------- */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+/* -------------------------------------------
+   곡 카드 디자인 (유리 느낌 + 발광)
+-------------------------------------------- */
+.song-card {
+    background: rgba(40, 60, 100, 0.18); /* TODO: 카드 배경(짙은 남청색 투명) */
+    padding: 25px;
+    border-radius: 18px;
+
+    backdrop-filter: blur(10px);
+
+    /* 은은한 하늘색 발광 */
+    box-shadow: 0 0 25px rgba(100, 160, 255, 0.25);
+
+    transition: all 0.35s ease;
+}
+
+/* hover 시 조명이 퍼지는 효과 */
+.song-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 40px rgba(140, 190, 255, 0.5);
+}
+
+/* -------------------------------------------
+   이미지 스타일
+-------------------------------------------- */
+.song-image {
+    width: 100%;
+    max-height: 270px;  /* TODO: 이미지 크기 조절 가능 */
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+
+    box-shadow: 0 0 15px rgba(150, 200, 255, 0.28); /* 이미지 은은한 조명 */
+}
+
+/* -------------------------------------------
+   제목 및 텍스트
+-------------------------------------------- */
+.song-title {
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+    color: #eaf4ff;  /* TODO: 제목 색 */
+}
+
+.artist {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    opacity: 0.9;
+    color: #cfe2ff;
+}
+
+.description {
+    line-height: 1.6;
+    opacity: 0.85;
+}
+
+/* -------------------------------------------
+   footer
+-------------------------------------------- */
+.footer {
+    text-align: center;
+    font-size: 0.9rem;
+    opacity: 0.6;
+    padding: 40px 0;
+    margin-top: 40px;
+}
+
+/* -------------------------------------------
+   유튜브 이동 버튼
+-------------------------------------------- */
+.yt-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 18px;
+
+    /* 버튼 색감: 하늘색 계열 */
+    background: rgba(120, 180, 255, 0.25);
+    color: #eaf4ff;
+    border: 1px solid rgba(160, 200, 255, 0.4);
+
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 0.95rem;
+
+    backdrop-filter: blur(4px);
+    transition: all 0.3s ease;
+}
+
+/* hover 효과: 하늘색 조명이 조금 더 퍼지는 느낌 */
+.yt-button:hover {
+    background: rgba(150, 200, 255, 0.35);
+    box-shadow: 0 0 15px rgba(150, 200, 255, 0.5);
+    transform: translateY(-2px);
+}
