@@ -3,4 +3,4 @@
 #### 팀장: 신정호
 팀원: 권현우, 이호재
 #
-This web page is a playlist of songs that you want to overcome to get rid of even a little bit of hard time. This is a complete playlist website that we've listened to and composed of comforting songs.
+이 웹페이지는 힘든 시간을 조금이라도 극복하고 싶은 분들을 위한 노래들을 모아놓은 플레이리스트입니다. 저희가 직접 듣고, 편안한 노래들로 구성된 완벽한 플레이리스트 웹사이트입니다.
