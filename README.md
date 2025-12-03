@@ -3,5 +3,4 @@
 #### 팀장: 신정호
 팀원: 권현우, 이호재
 #
-이 웹페이지는 우리 개개인이 힘든 시간을 이겨내기 위해서 들으며 힘을 얻은 노래들을 보여주며 우리를 위로한 노래가
-나와 같은 상황에 있는 다른 누군가를 우울의 늪에서 꺼내었으면 하는 마음에 완성된 페이지입니다.
+This web page is a playlist of songs that you want to overcome to get rid of even a little bit of hard time. It's a complete playlist of songs you've heard and comforted yourself.
